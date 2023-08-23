@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    @extend %align-center;
+    background: $white;
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 2rem 1.4rem 2rem;
+    width: 100%;
+    height: 6.25rem;
+    z-index: 10;
+    position: relative;
+
+    a {
+        font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: $bebas-L;
+        letter-spacing: 0.05rem;
+        color: $black;
+        margin-left: 2rem;
+        padding: 0.2rem;
+
+        @include tablet {
+            opacity: 0;
+        }
+
+        @include mobile {
+                opacity: 0;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-bottom: 4px solid $black;
+            transition: all 0.1s ease-in;
+        }
+    }
+
+    &__logo {
+        height: 4rem;
+        width: auto;
+        @extend %align-center;
+    }
+
+    &__bars {
+        opacity: 0;
+
+        @include tablet {
+            color: $black;
+            opacity: 1;
+            position: absolute;
+            right: 20px;
+            font-size: 2rem;
+        }
+
+        @include mobile {
+            color: $black;
+            opacity: 1;
+            position: absolute;
+            right: 20px;
+            font-size: 2rem;
+        }
+
+        &__menu {
+            @extend %align-center;
+            list-style: none;
+            text-align: center;
+            margin-right: 1.3rem;
+
+            &--links {
+                @extend %align-center;
+                color: $black;
+                justify-content: center;
+                text-decoration: none;
+                padding: 0 1rem;               
+            }
+        }
+    }
+}
+

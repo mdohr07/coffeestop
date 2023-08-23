@@ -1,0 +1,462 @@
+.hero__container--btn, .hero__container button, .navbar__bars__menu--links, .navbar__bars__menu, .navbar__logo, .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background: #FFF;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.3rem 2rem 1.4rem 2rem;
+  width: 100%;
+  height: 6.25rem;
+  z-index: 10;
+  position: relative;
+}
+.navbar a {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+  color: #000;
+  margin-left: 2rem;
+  padding: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  .navbar a {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .navbar a {
+    opacity: 0;
+  }
+}
+.navbar a:hover {
+  background-color: transparent;
+  border-bottom: 4px solid #000;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.navbar__logo {
+  height: 4rem;
+  width: auto;
+}
+.navbar__bars {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: #000;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .navbar__bars {
+    color: #000;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+.navbar__bars__menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 1.3rem;
+}
+.navbar__bars__menu--links {
+  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Aleo", Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #000;
+}
+
+h1, h2 {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.7rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+}
+
+h4 {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.7rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+}
+
+h5 {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font: "Aleo", Georgia, "Times New Roman", Times, serif 18px;
+  text-align: justify;
+  word-spacing: 0.45rem;
+  text-justify: inter-character;
+}
+
+.hero__container--btn a, .hero__container--btn, .hero__container button {
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.7rem;
+  color: #000;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #000;
+  color: #FFF;
+}
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.hero__container--section {
+  margin: auto;
+  width: 25rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--section {
+    background-color: #FFF;
+    border: 6px double #000;
+    color: #000;
+    width: 90%;
+    height: 100%;
+    margin-top: 0.1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero__container--section {
+    background-color: #000;
+  }
+}
+.hero__container--left {
+  width: 100%;
+  line-height: 1.2;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left {
+    padding: 5rem 0;
+    background-image: url("/images/clifford-VobvKmG-StA-unsplash.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero__container--left {
+    line-height: 1.3;
+    background-image: url("/images/clifford-VobvKmG-StA-unsplash.jpg");
+    background-size: cover;
+  }
+}
+.hero__container--left h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left h1 {
+    font-size: 2.7rem;
+  }
+}
+.hero__container--left p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left p {
+    font-size: 22px;
+    line-height: 1.4em;
+  }
+}
+.hero__container--btn, .hero__container button {
+  background: #FFDE59;
+  border: none;
+  padding: 0.5em;
+  border-radius: 7px;
+  line-height: 2.5rem;
+  outline: none;
+  position: relative;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__container--btn a {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  width: 100%;
+}
+.hero__container--btn:hover a {
+  color: #E9D8C4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.hero__container--btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #62372D;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 7px;
+}
+.hero__container--btn:hover:after {
+  width: 100%;
+}
+.hero__container--right {
+  background-image: url("/images/clifford-VobvKmG-StA-unsplash.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+.hero__container--img {
+  height: 90vh;
+  width: 100%;
+}
+
+.specialities {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.3rem;
+  width: 100%;
+  height: auto;
+  background-color: #E9D8C4;
+  color: #000;
+}
+
+.repairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  background-color: #FFF;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .repairs {
+    grid-template-columns: 1fr;
+  }
+}
+.repairs__bg {
+  width: 100%;
+  height: 40vh;
+  background-image: url("/images/mechanic-repairing-bicycle.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+.repairs__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+@media screen and (max-width: 768px) {
+  .repairs__left {
+    text-align: center;
+  }
+}
+.repairs__left h2 {
+  color: #FFDE59;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.repairs__left h3 {
+  margin-bottom: 2rem;
+}
+.repairs__left h4 {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .repairs__left h4 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .repairs__left p, .repairs__left section {
+    text-align: center;
+  }
+}
+.repairs__middle {
+  padding: 2em;
+  background-color: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .repairs__middle {
+    height: 300px;
+    padding: 0;
+  }
+}
+.repairs__middle iframe {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .repairs__middle iframe {
+    border-radius: 0%;
+  }
+}
+.repairs__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 2em;
+  background-color: #FFF;
+}
+.repairs__right address {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.repairs__right p {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #FFF;
+  background-color: #000;
+  padding: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 28rem;
+  }
+}
+.footer p {
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .footer p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__newsletter {
+    width: 100%;
+  }
+}
+.footer__contact {
+  margin-left: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .footer__contact {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+.footer__social {
+  margin-left: 2.8rem;
+}
+@media screen and (max-width: 768px) {
+  .footer__social {
+    width: 100%;
+    margin-left: 0.7rem;
+    margin-top: 1rem;
+  }
+}
+.footer .fa-brands {
+  color: #FFDE59;
+  margin-right: 1.5rem;
+}
