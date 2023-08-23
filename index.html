@@ -22,11 +22,11 @@
     <!-- Navbar -->
     <nav class="navbar">
     <img src="images/logo.png" class="navbar__logo" alt="coffee stop logo">
-        <div class="navbar__bars">
+        <div class="navbar__bars" id="menu">
             <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
         </div>
         </div>
         
@@ -117,6 +117,14 @@
 
     </div>
 </footer>
+
+<script>
+    var menu = document.getElementById("menu");
+
+    menu.onclick = function() {
+        menu.classList.toggle("openmenu");
+    }
+</script>
 
 </body>
 </html>
