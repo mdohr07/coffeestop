@@ -49,8 +49,35 @@
 
     &__bars {
         opacity: 0;
+        width: 70px;
+        height: 70px;
+        margin: 8px;
+        background-color: $coffee;
+        border-radius: 5px;
+        cursor: pointer;
+
+        div {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            
+
+            span {
+                background: $white;
+                width: 50px;
+                height: 7px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                display: block;
+                position: relative;
+                top: 4px;
+                left: 1px;
+                transform: translate(-50% -50%); // at the center of the box
+            }
+        }
 
         @include tablet {
+            opacity: 1;
             color: $black;
             opacity: 1;
             position: absolute;
@@ -59,6 +86,7 @@
         }
 
         @include mobile {
+            opacity: 1;
             color: $black;
             opacity: 1;
             position: absolute;
