@@ -77,14 +77,14 @@
 .navbar__bars .hamburger > span:not(:last-child) {
   margin-bottom: 10px;
 }
-.navbar__bars .hamburger.open > span:first-child {
+.navbar__bars .hamburger.openmenu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.navbar__bars .hamburger.open > span:nth-child(2) {
+.navbar__bars .hamburger.openmenu > span:nth-child(2) {
   opacity: 0;
 }
-.navbar__bars .hamburger.open > span:last-child {
+.navbar__bars .hamburger.openmenu > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 3px 2px;
