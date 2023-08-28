@@ -107,7 +107,6 @@ a {
         &--left {
             width: 100%;
             line-height: 1.2;
-
             display: grid;
             align-items: center;
 
@@ -370,4 +369,14 @@ a {
         color: $yellow;
         margin-right: 1.5rem;
     }
+}
+
+// Animation 
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
 }

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="app.js"></script> <!-- Run after HTML body-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="images\favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +44,7 @@
     <!-- Hero Section -->
        <div class="hero">
         <div class="hero__container">
-            <div class="hero__container--left">
+            <div class="hero__container--left hidden">
                 <section class="hero__container--section">
 
                 <h1>your bike café</h1>
@@ -57,7 +59,7 @@
                 </section>
             </div>
 
-            <div class="hero__container--right">
+            <div class="hero__container--right hidden">
             </div>
         </div>
        </div>
@@ -69,8 +71,8 @@
     </section>
 
 <!-- Repairs Section -->
-<div class="repairs__bg"></div>
-    <div class="repairs">
+<div class="repairs__bg hidden"></div>
+    <div class="repairs hidden">
         <section class="repairs__left">
             <section>
             <h2>Bike repairs</h2>
