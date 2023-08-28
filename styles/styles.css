@@ -20,7 +20,8 @@
   width: 100%;
   height: 6.25rem;
   z-index: 10;
-  position: relative;
+  position: fixed;
+  top: 0px;
 }
 .navbar a {
   font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -29,15 +30,21 @@
   color: #000;
   margin-left: 2rem;
   padding: 0.2rem;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 @media screen and (max-width: 768px) {
   .navbar a {
     opacity: 0;
+    -webkit-transition: none;
+    transition: none;
   }
 }
 @media screen and (max-width: 280px) {
   .navbar a {
     opacity: 0;
+    -webkit-transition: none;
+    transition: none;
   }
 }
 .navbar a:hover {
@@ -187,6 +194,7 @@ a {
 .hero {
   background-color: #000;
   color: #FFF;
+  margin-top: 6.25rem;
 }
 .hero__container {
   display: grid;
