@@ -131,6 +131,11 @@
 <footer class="footer">
     <div class="footer__newsletter">
     <h4>Receive updates via mail</h4>
+
+    <form>
+        <input type="email" name="Email" placeholder="Your email address" required>
+        <button type="submit"><i class="fa-regular fa-paper-plane fa-lg" style="color: #000000;"></i></button>
+    </form>
     </div>
 
     <div class="footer__contact">
@@ -146,43 +151,6 @@
 
     </div>
 </footer>
-
-<script>
-    var menu = document.getElementById("menu");
-
-    menu.onclick = function() {
-        menu.classList.toggle("openmenu");
-    }
-
-    // Script für Galerie-Scrolling
-let scrollContainer = document.querySelector(".specialities__gallery");
-let prevBtn = document.getElementById("prevBtn");
-let nextBtn = document.getElementById("nextBtn");
-
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-    scrollContainer.style.scrollBehavior = "auto";
-});
-
-nextBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 1000;
-});
-
-prevBtn.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 1000;
-});
-
-    // Dieses Skript wird ausgeführt, nachdem das DOM vollständig geladen ist
-document.addEventListener("DOMContentLoaded", function() {
-    // Scrollbar ausblenden
-    const gallery = document.querySelector(".specialities__gallery");
-    gallery.style.overflow = "hidden";
-});
-
-</script>
 
 </body>
 </html>

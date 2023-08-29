@@ -67,9 +67,6 @@ a {
     color: $white;
     height:90vh;
 
-
-
-
     &__container {
         display: grid;
         grid-template-columns: 1fr 1fr; //fractional unit, 2 gleichbreite Spalten
@@ -407,6 +404,39 @@ a {
 
         @include tablet {
             width: 100%;
+        }
+
+        form {
+            margin-top: 0.5rem;
+            background-color: $white;
+            display: flex;
+            width: fit-content;
+
+            @include tablet {
+                margin: 0 auto;
+            }
+            
+            @include mobile {
+                margin: 0 auto;
+            }
+
+            input {
+                border: 0;
+                outline: none;
+                padding: 10px 20px;
+                height: 50px;
+                width: 90%;
+            }
+
+            button {
+                background-color: $yellow;
+                border: 0;
+                outline: none;
+                height: 50px;
+                width: 65px;
+                cursor: pointer;
+                padding: 5px;
+            }
         }
     }
 

@@ -571,6 +571,42 @@ a {
     width: 100%;
   }
 }
+.footer__newsletter form {
+  margin-top: 0.5rem;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .footer__newsletter form {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 280px) {
+  .footer__newsletter form {
+    margin: 0 auto;
+  }
+}
+.footer__newsletter form input {
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  height: 50px;
+  width: 90%;
+}
+.footer__newsletter form button {
+  background-color: #FFDE59;
+  border: 0;
+  outline: none;
+  height: 50px;
+  width: 65px;
+  cursor: pointer;
+  padding: 5px;
+}
 .footer__contact {
   margin-left: 1.3rem;
 }
