@@ -66,8 +66,35 @@
     <!-- Hero Section End -->
 
     <section class="specialities">
-       <h2>Specialities</h2>
+       <div class="specialities__head">
+        <h2>Specialities</h2>
        <h5>This and so much more... <i class="fa-solid fa-file-arrow-down fa-sm"></i></h5>
+       </div>
+
+       <div class="gallery-wrap">
+        <img src="/images/backbtn.png" class="prevBtn" id="prevBtn">
+
+        <div class="specialities__gallery">
+            <div>
+                <span><img src="images\gallery\burger.jpg" alt="Burger"></span>
+                <span><img src="images\gallery\cappu.jpg" alt="Kaffeespezialitäten"></span>
+                <span><img src="images\gallery\torte.jpg" alt="Torten"></span> 
+            </div>
+            <div>
+                <span><img src="images\gallery\matcha.jpg" alt="Matcha"></span>
+                <span><img src="images\gallery\sandy.jpg" alt="Sandwiches"></span>
+                <span><img src="images\gallery\waffel.jpg" alt="Waffeln"></span>
+            </div>
+            <div>
+                <span><img src="images\gallery\pasta.jpg" alt="Pastaspezialitäten"></span>
+                <span><img src="images\gallery\spaghetti.jpg" alt="Spaghetti"></span>
+                <span><img src="images\gallery\pizza.jpg" alt="Pizzen"></span>
+            </div>
+        </div>
+
+        <img src="/images/forwardbtn.png" class="nextBtn" id="nextBtn">
+       </div>
+    
     </section>
 
 <!-- Repairs Section -->
@@ -126,6 +153,13 @@
     menu.onclick = function() {
         menu.classList.toggle("openmenu");
     }
+
+    // Dieses Skript wird ausgeführt, nachdem das DOM vollständig geladen ist
+document.addEventListener("DOMContentLoaded", function() {
+    // Scrollbar ausblenden
+    const gallery = document.querySelector(".specialities__gallery");
+    gallery.style.overflow = "hidden";
+});
 </script>
 
 </body>
