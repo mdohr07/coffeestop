@@ -400,6 +400,11 @@ a {
         }
     }
 
+    span {
+        font-size: smaller;
+        color: $yellow;
+    }
+
     &__newsletter {
 
         @include tablet {
@@ -407,7 +412,8 @@ a {
         }
 
         form {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
             background-color: $white;
             display: flex;
             width: fit-content;

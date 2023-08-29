@@ -566,13 +566,18 @@ a {
     text-align: center;
   }
 }
+.footer span {
+  font-size: smaller;
+  color: #FFDE59;
+}
 @media screen and (max-width: 768px) {
   .footer__newsletter {
     width: 100%;
   }
 }
 .footer__newsletter form {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   background-color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
