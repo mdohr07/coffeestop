@@ -213,6 +213,7 @@ a {
 .hero {
   background-color: #000;
   color: #FFF;
+  height: 90vh;
 }
 .hero__container {
   display: grid;
@@ -281,7 +282,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .hero__container--left {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background-image: url("https://mdohr07.github.io/coffeestop/images/clifford-VobvKmG-StA-unsplash.jpg");
     background-size: cover;
     margin-bottom: 0px;

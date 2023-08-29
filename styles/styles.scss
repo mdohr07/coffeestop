@@ -65,6 +65,9 @@ a {
 .hero {
     background-color: $black;
     color: $white;
+    height:90vh;
+
+
 
 
     &__container {
@@ -76,7 +79,6 @@ a {
         margin-top: 6.25rem;
         height:100%;
         z-index: 1;
-       
 
         @include tablet {
             grid-template-columns: 1fr;
@@ -119,7 +121,7 @@ a {
             margin-bottom: 2rem;
 
             @include tablet {
-                padding: 5rem 0; // top & bottom 5rem
+                padding: 2rem 0; // top & bottom 5rem
                 background-image: url("https://mdohr07.github.io/coffeestop/images/clifford-VobvKmG-StA-unsplash.jpg");
                 background-size: cover;
                 margin-bottom: 0px;
@@ -259,6 +261,7 @@ a {
             grid-template-columns: repeat(3, 1fr); // 3 in 1 row
             grid-gap: 20px;
             padding: 10px;
+
         }
 
         img {
