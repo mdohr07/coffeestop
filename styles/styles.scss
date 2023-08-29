@@ -231,9 +231,11 @@ a {
         align-items: center;
         justify-content: center;
         margin: 5% auto 10%;
-    
-        .nextBtn {
-            margin-left: 10px;
+
+        #prevBtn, #nextBtn {
+            cursor: pointer;
+            margin: 40px;
+            width: 40px;
         }
     }
 
@@ -248,20 +250,27 @@ a {
     }
 
     .specialities__gallery {
-        width: 1300px;
+        width: 1000px;
         display: flex;
         overflow-x: scroll;
 
         & > div {
             display: grid;
             grid-template-columns: repeat(3, 1fr); // 3 in 1 row
-            grid-gap: 10px;
+            grid-gap: 20px;
             padding: 10px;
         }
 
         img {
             width: auto;
             max-height: 200px;
+            transition: 0.5s;
+            filter: brightness(90%);
+
+            &:hover {
+                transform: scale(1.1);
+                filter: brightness(100%);
+            }
         }
 
         &::-webkit-scrollbar {

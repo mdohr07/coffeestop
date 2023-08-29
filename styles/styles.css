@@ -389,8 +389,10 @@ a {
           justify-content: center;
   margin: 5% auto 10%;
 }
-.specialities .gallery-wrap .nextBtn {
-  margin-left: 10px;
+.specialities .gallery-wrap #prevBtn, .specialities .gallery-wrap #nextBtn {
+  cursor: pointer;
+  margin: 40px;
+  width: 40px;
 }
 .specialities__head {
   display: grid;
@@ -404,7 +406,7 @@ a {
   color: #000;
 }
 .specialities .specialities__gallery {
-  width: 1300px;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,12 +415,22 @@ a {
 .specialities .specialities__gallery > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   padding: 10px;
 }
 .specialities .specialities__gallery img {
   width: auto;
   max-height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+.specialities .specialities__gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 .specialities .specialities__gallery::-webkit-scrollbar {
   width: 0;
