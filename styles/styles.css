@@ -213,7 +213,7 @@ a {
 .hero {
   background-color: #000;
   color: #FFF;
-  height: 90vh;
+  height: 800px;
 }
 .hero__container {
   display: grid;
