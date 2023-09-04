@@ -214,7 +214,7 @@ a {
 .hero {
   background-color: #000;
   color: #FFF;
-  height: 90vh;
+  height: 90%;
   width: 100%;
 }
 @media screen and (max-width: 280px) {
