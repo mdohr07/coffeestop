@@ -226,10 +226,13 @@ a {
     color: $black;
 
     @include tablet {
-
+        text-align: center;
+        grid-template-columns: 1fr;  
     }
 
     @include mobile {
+        text-align: center;
+        grid-template-columns: 1fr;  
         
     }
 
@@ -243,6 +246,22 @@ a {
             cursor: pointer;
             margin: 40px;
             width: 40px;
+
+            @include tablet {
+                width: 0px;
+                height:0px;
+                padding: 0px;
+                margin: 0px;
+                opacity: 0;
+            }
+        
+            @include mobile {
+                width: 0px;
+                height:0px;
+                padding: 0px;
+                margin: 0px; 
+                opacity: 0;
+            }
         }
     }
 
@@ -261,12 +280,35 @@ a {
         display: flex;
         overflow-x: scroll;
 
+        @include tablet {
+            width: 300px;
+            display:grid;
+            overflow:hidden;
+        }
+    
+        @include mobile {
+            width: 300px;    
+            display:grid;
+            overflow:hidden;
+        }
+
         & > div {
             display: grid;
             grid-template-columns: repeat(3, 1fr); // 3 in 1 row
             grid-gap: 20px;
             padding: 10px;
 
+            @include tablet {
+                grid-gap: 10px;
+                padding: 5px;
+                grid-template-columns: repeat (2, 1fr);
+            }
+        
+            @include mobile {
+                grid-gap: 10px;
+                padding: 5px;   
+                grid-template-columns: repeat (2, 1fr);
+            }
         }
 
         img {
@@ -275,9 +317,25 @@ a {
             transition: 0.5s;
             filter: brightness(90%);
 
+            @include tablet {
+                max-height: 100px;
+            }
+        
+            @include mobile {
+                max-height: 100px;
+            }
+
             &:hover {
                 transform: scale(1.1);
                 filter: brightness(100%);
+
+                @include tablet {
+                    transform: none;
+                }
+            
+                @include mobile {
+                    transform: none; 
+                }
             }
         }
 

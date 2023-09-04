@@ -378,6 +378,18 @@ a {
   background-color: #E9D8C4;
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .specialities {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
 .specialities .gallery-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,6 +406,24 @@ a {
   cursor: pointer;
   margin: 40px;
   width: 40px;
+}
+@media screen and (max-width: 768px) {
+  .specialities .gallery-wrap #prevBtn, .specialities .gallery-wrap #nextBtn {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities .gallery-wrap #prevBtn, .specialities .gallery-wrap #nextBtn {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+  }
 }
 .specialities__head {
   display: grid;
@@ -413,11 +443,39 @@ a {
   display: flex;
   overflow-x: scroll;
 }
+@media screen and (max-width: 768px) {
+  .specialities .specialities__gallery {
+    width: 300px;
+    display: grid;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities .specialities__gallery {
+    width: 300px;
+    display: grid;
+    overflow: hidden;
+  }
+}
 .specialities .specialities__gallery > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .specialities .specialities__gallery > div {
+    grid-gap: 10px;
+    padding: 5px;
+    grid-template-columns: repeat 2, 1fr;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities .specialities__gallery > div {
+    grid-gap: 10px;
+    padding: 5px;
+    grid-template-columns: repeat 2, 1fr;
+  }
 }
 .specialities .specialities__gallery img {
   width: auto;
@@ -427,11 +485,33 @@ a {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
+@media screen and (max-width: 768px) {
+  .specialities .specialities__gallery img {
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities .specialities__gallery img {
+    max-height: 100px;
+  }
+}
 .specialities .specialities__gallery img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
+}
+@media screen and (max-width: 768px) {
+  .specialities .specialities__gallery img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@media screen and (max-width: 280px) {
+  .specialities .specialities__gallery img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 .specialities .specialities__gallery::-webkit-scrollbar {
   width: 0;
