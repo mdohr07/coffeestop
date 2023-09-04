@@ -65,7 +65,11 @@ a {
 .hero {
     background-color: $black;
     color: $white;
-    height:800px;
+    height: 90%;
+
+    @include mobile {
+        height: 37.5rem;
+    }
 
     &__container {
         display: grid;
