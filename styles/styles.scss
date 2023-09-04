@@ -12,6 +12,7 @@
 
 body {
     background-color: $black;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -65,7 +66,8 @@ a {
 .hero {
     background-color: $black;
     color: $white;
-    height: 90%;
+    height: 90vh;
+    width: 100%;
 
     @include mobile {
         height: 37.5rem;
