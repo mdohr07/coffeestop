@@ -225,6 +225,14 @@ a {
     background-color: $beige;
     color: $black;
 
+    @include tablet {
+
+    }
+
+    @include mobile {
+        
+    }
+
     .gallery-wrap {
         display: flex;
         align-items: center;
