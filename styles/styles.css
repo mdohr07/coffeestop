@@ -437,7 +437,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem;
+  margin-top: 2rem;
   width: 100%;
   height: auto;
   background-color: #E9D8C4;
