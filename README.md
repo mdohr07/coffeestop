@@ -1,4 +1,4 @@
-# COFFEE STOP - Your Cycling Café 
+# COFFEE STOP - Your Bike Café 
 
 Coffee Stop is an imaginary business project for a cycling café, offering a unique blend of coffee and bicycle services. Cyclists can enjoy a refreshing cup of coffee while having their bikes repaired or participate in group cycling events and workshops. This project serves as a platform for improving skills in web development and is built using *HTML*, *CSS*, *SCSS*, and a touch of *JavaScript*.
 
